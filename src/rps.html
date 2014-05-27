@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang='zh-cn'>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content=''>
+    <meta name='author' content=''>
+    <link rel='shortcut icon' href='../../docs-assets/ico/favicon.png'>
+
+    <title>Rock, Paper, Scissors</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href='http://cdn.bootcss.com/bootstrap/3.1.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='http://cdn.bootcss.com/bootstrap/3.1.1/css/bootstrap-theme.min.css' rel='stylesheet'>
+
+    <!-- Custom styles for this template -->
+    <link href='main.css' rel='stylesheet'>
+    <script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+    <script src='main.js'></script>
+
+  </head>
+
+  <body>
+
+    <div class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
+      <div class='container'>
+        <div class='navbar-header'>
+          <a class='navbar-brand' href='#'>Rock, Paper, Scissor 剪刀，石头，布！</a>
+        </div>
+      </div>
+    </div>
+
+    <div class='container'>
+      <div class='starter-template'>
+        <div class='row'>
+          <div id='player1' class='col-md-4'>
+            <h2>YOU</h2><h2 id='name'>Player 1</h2>
+            <h2 id='choice'></h2>
+            <div id='hands'></div>
+          </div>
+
+          <div class='col-md-4'>
+            <img src='imgs/psr.jpg' alt='psr' class='img-circle' style='width:200px;' />
+            <br/>
+            <font color='red'><h1 id='countdown'></h1></font>
+            <br/>
+            <button id='control' type='button' class='btn btn-primary'>START</button>
+            <br/>
+            <br/>
+            <div id='gameresult'></div>
+          </div>
+
+          <div id='player2' class='col-md-4'>
+            <h2>X MAN</h2><h2 id='name'>Player 2</h2>
+            <h2 id='choice'></h2>
+            
+            <div id='hands'></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src='http://js.leapmotion.com/leap-0.5.0.min.js'></script>
+    <script src='http://js.leapmotion.com/leap-plugins-0.1.4.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js'></script>
+    <script src='http://cdn.bootcss.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
+  </body>
+</html>
